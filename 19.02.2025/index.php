@@ -10,19 +10,19 @@
 <body>
     <form action="" method="POST">
         <label for="tekst">Wprowadź tekst:</label>
-        <input type="text" name="tekst">
+        <input type="text" name="tekst" value = "<?php echo $_POST['tekst']; ?>">
         <br>
         <label for="tekst1">Tekst 1:</label>
-        <input type="text" name="tekst1">
+        <input type="text" name="tekst1" value = "<?php echo $_POST['tekst1']; ?>">
         <br>
         <label for="tekst2">Tekst 2:</label>
-        <input type="text" name="tekst2">
+        <input type="text" name="tekst2" value = "<?php echo $_POST['tekst2']; ?>">
         <br>
         <label for="liczbaPowtorzen">Liczba powtórzeń:</label>
-        <input type="number" name="liczbaPowtorzen">
+        <input type="number" name="liczbaPowtorzen" value = "<?php echo $_POST['liczbaPowtorzen']; ?>">
         <br>
         <label for="porownanieZnakow">Liczba znaków do porównania:</label>
-        <input type="number" name="porownanieZnakow">
+        <input type="number" name="porownanieZnakow" value="<?php echo $_POST['porownanieZnakow']; ?>">
         <br>
         <input type="submit" value="Wykonaj">
     </form>
