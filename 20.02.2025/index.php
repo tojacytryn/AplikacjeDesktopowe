@@ -71,14 +71,9 @@
 
         echo "<br>";
 
-        $suma = 0;
-        $średnia = 0;
-        foreach ($tablica as $element) {
-            $suma += $element;
-        }
-        echo "Suma elementów tablicy wynosi: " . $suma;
+        echo "Suma elementów tablicy wynosi: " . array_sum($tablica);
         echo "<br>";
-        echo "Średnia elementów tablicy wynosi: " . $suma / count($tablica);
+        echo "Średnia elementów tablicy wynosi: " . array_sum($tablica) / count($tablica);
 
         echo "<br>";
 
